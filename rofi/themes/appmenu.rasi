@@ -1,0 +1,98 @@
+configuration {
+  modes: [drun];
+  display-drun: "./ ";
+}
+
+*{
+	fg: #ebdbb2;
+	bg: #282828;
+	text-color: @fg;
+	background-color: @bg;
+	font: "Quicksand Medium 17";
+}
+
+
+window {
+	background-color: white;
+	children: [mainbox];
+	location: southwest;
+	anchor: southwest;
+	width: 20%;	
+}
+
+mainbox {
+	spacing: 0;
+	padding: 0;
+	orientation: vertical;
+	children: [message, listview, inputbar];	
+}
+
+inputbar {
+	padding: 10;
+	orientation: horizontal;
+	children: [prompt,entry,num-filtered-rows];
+	background-color: @fg;
+}
+
+	prompt {
+		text-color: @bg;
+		background-color: @fg;
+	}
+	
+	entry {
+		text-color: @bg;
+		background-color: @fg;
+	}
+	
+	num-filtered-rows {
+		text-color: @bg;
+		background-color: @fg;
+	}
+
+message {
+	children: [textbox];
+
+}
+
+textbox {
+	padding: 10;
+}
+
+listview {
+	orientation: vertical;
+	lines: 5;
+	spacing: 0;
+}
+
+element {
+	padding: 10 0 10 10;
+	background-color: @bg;
+	children: [element-icon ,element-text];
+	spacing: 1px;
+}
+
+element-text{
+	background-color: @bg;
+}
+element-icon{
+	background-color: @bg;
+	horizontal-align: 1;
+	padding: 0 10 0 0 ;
+	size: 1.2em;
+}
+
+
+
+element selected {
+	background-color: @fg;
+	
+}
+
+element-text selected  {
+	background-color: @fg;
+	text-color: @bg;
+}
+
+element-icon selected  {
+	background-color: @fg;
+}

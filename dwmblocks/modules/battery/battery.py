@@ -1,0 +1,6 @@
+file_energy_full = open("/sys/class/power_supply/BAT0/energy_full", "r")
+file_energy_now = open("/sys/class/power_supply/BAT0/energy_now", "r")
+energy_full = int(file_energy_full.read())
+energy_now = int(file_energy_now.read())
+powerlevel = (round((100/energy_full)*energy_now))
+print(powerlevel)
