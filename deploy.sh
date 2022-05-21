@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#prepare
+#prepare files
 mkdir -p $HOME/.config/dunst
 mkdir -p $HOME/.config/dwm
 mkdir -p $HOME/.config/dwmblocks
