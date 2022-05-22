@@ -29,6 +29,10 @@ cp -f $PWD/zsh/.zshrc $HOME/.config/zsh/
 mkdir dwm dwmblocks st nsxiv
 rm dwm/config.h st/config.h dwm/blocks.h $HOME/.config/nsxiv/config.h
 ln -s $HOME.local/src/dwm/config.h $HOME/.config/dwm/config.h
+cd $HOME.local/src/dwm && make && sudo make install
 ln -s $HOME.local/src/st/config.h $HOME/.config/st/config.h
+cd $HOME.local/src/st && make && sudo make install
 ln -s $HOME.local/src/dwmblocks/blocks.h $HOME/.config/dwmblocks/blocks.h
+cd $HOME.local/src/dwmblock && make && sudo make install
 ln -s $HOME.local/src/nsxiv/config.h $HOME/.config/nsxiv/config.h
+cd $HOME.local/src/nsxiv && make && sudo make install
