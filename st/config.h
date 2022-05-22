@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Comic Code:pixelsize=29:antialias=true:autohint=true";
+static char *font = "Monospace:pixelsize=28:antialias=true:autohint=true";
 static int borderpx = 5;
 
 
