@@ -1,0 +1,11 @@
+# convenience aliases:
+alias reboot="sudo reboot"
+alias poweroff="sudo poweroff"
+alias shutdown="sudo shutdown now"
+alias xi="sudo xbps-install"
+alias xr="sudo xbps-remove"
+alias xu="sudo xbps-install -Syu"
+alias xs="sudo xbps-query -Rs"
+alias vim="nvim"
+alias ls="exa"
+alias ll="exa -la"
