@@ -27,6 +27,7 @@ cp -rf $PWD/rofi/themes $HOME/.config/rofi/
 cp -f $PWD/st/config.h $HOME/.local/src/st/
 #cp -f $PWD/x/xinitrc $HOME/.config/x/
 cp -f $PWD/zsh/zshrc $HOME/.config/zsh/
+cp -f $PWD/zsh/aliases $HOME/.config/zsh/
 
 #link
 #mkdir dwm dwmblocks st nsxiv
@@ -36,6 +37,6 @@ cd $HOME/.local/src/dwm && make && sudo make install
 ln -s $HOME/.local/src/st/config.h $HOME/.config/st/config.h
 cd $HOME/.local/src/st && make && sudo make install
 ln -s $HOME/.local/src/dwmblocks/blocks.h $HOME/.config/dwmblocks/blocks.h
-cd $HOME/.local/src/dwmblock && make && sudo make install
+cd $HOME/.local/src/dwmblocks && make && sudo make install
 ln -s $HOME/.local/src/nsxiv/config.h $HOME/.config/nsxiv/config.h
 cd $HOME/.local/src/nsxiv && make && sudo make install
