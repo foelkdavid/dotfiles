@@ -26,7 +26,7 @@ cp -f $PWD/picom/picom.conf $HOME/.config/picom/
 cp -rf $PWD/rofi/themes $HOME/.config/rofi/
 cp -f $PWD/st/config.h $HOME/.local/src/st/
 #cp -f $PWD/x/xinitrc $HOME/.config/x/
-cp -f $PWD/zsh/zshrc $HOME/.config/zsh/
+cp -f $PWD/zsh/zshrc $HOME/.config/zsh/.zshrc
 cp -f $PWD/zsh/aliases $HOME/.config/zsh/
 
 #link
